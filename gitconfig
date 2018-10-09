@@ -1,0 +1,62 @@
+[alias]
+    com = commit
+    co = checkout
+    st = status
+    br = branch
+    adp = add -p
+    loggy = log --graph --all --decorate
+    r = rebase
+
+
+[user]
+    name = Marie Fetiveau
+    email = marief@unity3d.com
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[url "https://gitlab.internal.unity3d.com/"]
+    insteadOf = gl:
+
+[core]
+    filemode = false
+    repositoryformatversion = 0
+    bare = false
+    logallrefupdates = true
+
+[merge]
+    ff = false
+
+[pull]
+    rebase = true
+
+[push]
+    default = upstream
+
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    ui = true
+
+[color "branch"]
+    current = yellow
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old = red
+    new = cyan
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
+[diff]
+    mnemonicprefix = true
