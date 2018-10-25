@@ -19,3 +19,7 @@ fi
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# GNU colors on OSX (brew install coreutils)
+eval $(gdircolors)
+alias ls="gls --color=auto"
